@@ -322,7 +322,18 @@ header {
     object-position: top;
 }
 
+/* ############## mens shopping ############ */
+.category-men-img {
+    height: 303px;
+    align-self: center;
+}
 
+.category-men-img img {
+    height: 100%;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+}
 
 @media screen and (max-width:1080px) {
 
