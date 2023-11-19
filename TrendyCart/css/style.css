@@ -135,6 +135,62 @@ header {
     display: none;
 }
 
+/* ########### Display Content ############ */
+
+.display-container {
+    display: flex;
+    padding-top: 130px;
+    justify-content: space-between;
+}
+
+.display-content {
+    width: 29vw;
+    align-self: center;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.display-content p {
+    text-transform: uppercase;
+    color: #3e4152;
+}
+
+.display-img {
+    width: 71vw;
+}
+
+.display-img img {
+    width: 100%;
+}
+
+.heading-1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.heading-2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 24px;
+    height: 45px;
+    padding: 0 17px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(2, 76, 133);
+    color: rgb(2, 76, 133);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.btn:hover {
+    background: rgb(2, 76, 133);
+    color: white;
+}
+
+
 @media screen and (max-width:1080px) {
 
     .hamburger-menu {
