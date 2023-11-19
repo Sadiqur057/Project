@@ -512,4 +512,29 @@ header {
     
         }
 
+
+            /* ######## category container ######### */
+    .category-items {
+        display: flex;
+        flex-direction: column;
+        width: 192px;
+        height: 280px;
+        justify-content: space-evenly;
+    }
+
+    .category-img {
+        height: 186px;
+    }
+
+    .category-men-img {
+        height: 216px;
+        align-self: center;
+    }
+    .category-men-img img {
+        display: block;
+        object-position: center;
+        object-fit: contain;
+    }
+
+
 }
