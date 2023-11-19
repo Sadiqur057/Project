@@ -335,6 +335,43 @@ header {
     object-fit: contain;
 }
 
+
+/* ############### footer container ############ */
+
+.footer-container {
+    padding: 30px 0px 40px 0px;
+    background-color: #fafbfc;
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+    box-shadow: 1px black;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header {
+    color: #282c3f;
+    font-size: 14px;
+    margin: 20px 0
+}
+
+.footer-column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    color: #94949f;
+    padding: 15px;
+}
+
+
 @media screen and (max-width:1080px) {
 
     .hamburger-menu {
