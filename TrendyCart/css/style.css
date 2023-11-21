@@ -553,4 +553,29 @@ header {
     .display-content {
         padding: 0;
     }
+
+    .heading-1 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .heading-2 {
+        font-size: 9px;
+    }
+
+    .btn {
+        font-size: 10px;
+        height: 16px;
+        padding: 0 6px;
+        margin: 5px 0;
+
+    }
+
+    .category-heading {
+        letter-spacing: .1em;
+        font-size: 1.2em;
+        margin: 40px 0 0 20px;
+        max-height: 5em;
+        font-weight: 700;
+    }
 }
