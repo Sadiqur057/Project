@@ -536,5 +536,21 @@ header {
         object-fit: contain;
     }
 
+}
 
+/* ######## For mobile devices ########## */
+@media screen and (max-width:760px) {
+    .display-img {
+        height: 20vh;
+    }
+
+    .display-img img {
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .display-content {
+        padding: 0;
+    }
 }
