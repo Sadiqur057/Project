@@ -46,3 +46,16 @@ header{
     padding: 2px;
 
 }
+.drop-down{
+    position: relative;
+    top: 6.5px;
+    transform: scale(0.8);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.lang-icon{
+    position: relative;
+    top: 7px;
+    transform: scale(0.8);
+}
+
