@@ -618,4 +618,28 @@ header {
         .category-items a .image-desc {
             font-size: 14px;
         }
+        .newuser-container {
+            height: 200px;
+        }
+    
+        .newuser-content p {
+            font-size: 14px;
+        }
+    
+        .newuser-content .coupon {
+            font-size: 10px;
+        }
+    
+        .footer-container a {
+            font-size: 12px;
+        }
+    
+        .footer-header {
+            font-size: 14px;
+        }
+    
+        .copyright {
+            font-size: 12px;
+        }
+    
 }
