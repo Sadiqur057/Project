@@ -1,3 +1,29 @@
+let bagItems;
+onLoad();
+
+function onLoad(){
+    let bagItemsStr = localStorage.getItem('bagItemsId');
+    bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+    displayItemOnHomePage();
+    displayBagIcon();
+}
+
+function addToBag(item){
+    bagItems.push(item);
+    localStorage.setItem('bagItemsId', JSON.stringify(bagItems))
+    displayBagIcon();
+}
+
+function displayBagIcon(){
+    let bagItemCountElement = document.querySelector('.bag-item-count');
+    if(bagItems.length>0){
+        bagItemCountElement.style.display = "block";
+        bagItemCountElement.innerText = bagItems.length;
+    }else{
+        bagItemCountElement.style.display = "none";
+    }
+}
+
 function displayItemOnHomePage(){
     let itemsContainerElement = document.querySelector('#items-container');
 let innerHTML = '';
@@ -29,4 +55,3 @@ items.forEach(item =>{
 });
 itemsContainerElement.innerHTML = innerHTML;
 }
-displayItemOnHomePage();
