@@ -119,7 +119,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     color: #282c3f;
     text-decoration: none;
     letter-spacing: 0.3px;
@@ -133,7 +132,7 @@ header {
 .action-name{
     margin-top: 8px;
 }
-.bag-item-count{
+.bag-item-count, .wishlist-item-count{
     background-color: #FF6382;
     white-space: nowrap;
     text-align: center;
