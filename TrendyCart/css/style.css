@@ -826,7 +826,14 @@ header {
         object-fit: contain;
     }
 
-
+    /* ######## Checkout Page ######### */
+    .bag-page {
+        width: 95%;
+        margin: auto;
+    }
+    .checkout-close-btn {
+        left: 72%;
+    }
 }
 
 /* ######## For mobile devices ########## */
@@ -952,8 +959,37 @@ header {
     .rating {
         padding-top: 2px;
     }
-
+    .checkout-close-btn {
+        left: 66%;
+    }
     
 }
 
+@media screen and (max-width: 600px) {
+    .bag-page {
+        flex-direction: column;
+    }
+    .bag-items-container{
+        width: 95%;
+        margin:10px auto ;
+    }
+    .bag-summary{
+        display: block;
+        width: 95%;
+        margin: 10px auto;
+        box-shadow: 0 0 1px #e6eae6;
+    }
+    .checkout-close-btn {
+        left: 72%;
+    }
+}
 
+@media screen and (max-width: 460px) {
+    .rating {
+        padding-top: 4px;
+    }
+    .checkout-close-btn {
+        left: 55%;
+    }
+
+}
