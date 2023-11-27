@@ -10,7 +10,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     {
         id: '002',
@@ -23,7 +25,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     {
         id: '003',
@@ -36,7 +40,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     {
         id: '004',
@@ -49,7 +55,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     {
         id: '005',
@@ -62,7 +70,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     {
         id: '006',
@@ -75,7 +85,9 @@ const items = [
         itemName: 'Men Bio-Wash Joggers',
         currentPrice: 503,
         originalPrice: 710,
-        discount: 42
+        discount: 42,
+        returnPeriod: 14,
+        deliveryDate: '20 Dec 2023'
     },
     
 ]
