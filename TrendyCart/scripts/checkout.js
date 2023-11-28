@@ -30,8 +30,12 @@ function displayBagItems(){
     
 }
 
-function removeFromBag(){
-    bagItems.filter (bagItemId => bagItemId != itemId)
+function removeFromBag(itemId){
+    bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
+    localStorage.setItem('bagItems', JSON.stringify(bagItems));
+    loadBagItemsObjects();
+    displayBagItems();
+
 }
 
 function generateItemHTML(item){
