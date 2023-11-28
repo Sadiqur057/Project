@@ -32,8 +32,9 @@ function displayBagItems(){
 
 function removeFromBag(itemId){
     bagItems = bagItems.filter(bagItemId => bagItemId != itemId);
-    localStorage.setItem('bagItems', JSON.stringify(bagItems));
+    localStorage.setItem('bagItemsId', JSON.stringify(bagItems));
     loadBagItemsObjects();
+    displayBagIcon();
     displayBagItems();
 
 }
