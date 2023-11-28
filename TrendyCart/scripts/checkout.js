@@ -3,9 +3,40 @@ onLoad();
 function onLoad(){
     loadBagItemsObjects();
     displayBagItems();
+    displayBagSummary()
+
 }
 
-
+function displayBagSummary(){
+  let displayBagSummaryElement = document.querySelector('.bag-summary');
+  let totalItems = 2;
+  let totalMRP = 2;
+  let totalDiscount = 2;
+  let totalPayment = 2;
+  displayBagSummaryElement.innerHTML = `
+  <div class="bag-details-container">
+  <p class="price-header">PRICE DETAILS (${totalItems} Items)</p>
+  <div class="price-item">
+    <span class="price-item-tag">Total BDT</span>
+    <span class="price-item-value">-BDT. ${totalMRP}</span>
+  </div>
+  <div class="price-item">
+    <span class="price-item-tag">Discount on BDT</span>
+    <span class="price-item-value price-base-discount">-BDT. ${totalDiscount}</span>
+  </div>
+  <div class="price-item">
+    <span class="price-item-tag">Convenience Fee</span>
+    <span class="price-item-value">-BDT. 99</span>
+  </div>
+  <div class="price-footer">
+    <span class="price-item-tag">Total Amount</span>
+    <span class="price-item-value">-BDT. ${totalPayment}</span>
+  </div>
+  </div>
+    <a class="btn-place-order" href="#">Place Order</a>
+  </div>
+  `
+}
 function loadBagItemsObjects(){
     // console.log(bagItems);
     bagItemsObjects = bagItems.map((itemId) =>{
