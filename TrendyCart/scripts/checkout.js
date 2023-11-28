@@ -3,16 +3,21 @@ onLoad();
 function onLoad(){
     loadBagItemsObjects();
     displayBagItems();
-    displayBagSummary()
+    displayBagSummary();
 
 }
 
 function displayBagSummary(){
   let displayBagSummaryElement = document.querySelector('.bag-summary');
-  let totalItems = 2;
+  let totalItems = bagItemsObjects.length;
   let totalMRP = 2;
   let totalDiscount = 2;
   let totalPayment = 2;
+  bagItemsObjects.forEach((bagItem)=>{
+    totalMRP += bagItem.originalPrice;
+    totalDiscount += bagItem.originalPrice-bagItem.currentPrice
+  })
+  
   displayBagSummaryElement.innerHTML = `
   <div class="bag-details-container">
   <p class="price-header">PRICE DETAILS (${totalItems} Items)</p>
@@ -67,7 +72,7 @@ function removeFromBag(itemId){
     loadBagItemsObjects();
     displayBagIcon();
     displayBagItems();
-
+    displayBagSummary();
 }
 
 function generateItemHTML(item){
